@@ -1,1 +1,1 @@
-# mt-navi
+# my-navi
