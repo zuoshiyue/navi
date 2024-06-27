@@ -13,15 +13,14 @@
 <body>
   <div class="header">
     <div class="logo"> 左拾月资源导航站 </div>
-    <form class="searchForm" action="#" method="get" target="_blank">
-      <select id="searchEngine" name="engine" onchange="submitSearch()">
-        <option value="https://www.bing.com/search">必应</option>
-        <option value="https://www.baidu.com/s">百度</option>
-        <!-- 可以添加更多的搜索引擎选项 -->
-      </select>
-      <input type="text" id="searchQuery" name="q" placeholder="搜索">
-      <button type="submit">搜索</button>
-    </form>
+
+   
+    <form class="searchForm" action="https://www.bing.com/search" method="get" target="_blank">
+      <input type="text" class="search-box" name="q" placeholder="搜索">
+      <button type="submit" class="search-button">搜索</button>
+  </form>
+
+    
     <div class="body">
       <div id="categoriesContainer"></div>
     </div>
