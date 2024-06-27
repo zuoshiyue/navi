@@ -1,0 +1,13 @@
+{
+    "categories": [
+      {
+        "title": "WordPress",
+        "items": [
+          { "text": "官方", "href": "https://wordpress.org/" },
+          { "text": "中文", "href": "https://cn.wordpress.org/" },
+          { "text": "英文", "href": "https://wordpress.org/" }
+        ]
+      }
+      
+    ]
+  }

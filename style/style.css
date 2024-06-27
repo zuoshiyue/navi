@@ -1,15 +1,15 @@
 /*reset 有点暴力，但是css结构简单，先暂时这样*/
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
-a{
+a {
     color: #333333;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
     color: #FFD415;
 }
@@ -25,13 +25,13 @@ a:hover{
     width: 250px;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    
-    	    perspective: 600px;
-       -moz-perspective: 600px;
-    -webkit-perspective: 600px;   
+
+    perspective: 600px;
+    -moz-perspective: 600px;
+    -webkit-perspective: 600px;
 }
 
-.site > .icon {
+.site>.icon {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -47,19 +47,19 @@ a:hover{
     transition: all 0.2s ease-in-out;
 }
 
-.site > .icon img {
+.site>.icon img {
     width: 32px;
     height: 32px;
     border-radius: 16px;
 }
 
-.site > .front{
+.site>.front {
     transform: rotateY(0deg);
     transform-origin: 27px;
     transition: all 0.2s ease-in-out;
 }
 
-.site > .front > .title {
+.site>.front>.title {
     height: 30px;
     line-height: 30px;
     font-size: 16px;
@@ -69,7 +69,7 @@ a:hover{
     color: #000000;
 }
 
-.site > .front > .desc {
+.site>.front>.desc {
     height: 34px;
     line-height: 17px;
     font-size: 12px;
@@ -78,7 +78,7 @@ a:hover{
     vertical-align: middle;
 }
 
-.site > .links{
+.site>.links {
     position: absolute;
     padding-left: 74px;
     top: 0px;
@@ -87,60 +87,60 @@ a:hover{
     transform: rotateY(-90deg);
     opacity: 0;
     line-height: 64px;
-    
-            transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d;
+
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    
-           transition: all 0.2s ease-in-out;
+
+    transition: all 0.2s ease-in-out;
     -webkit-transform: all 0.2s ease-in-out;
-    
-            filter: blur(3px);
-       -moz-filter: blur(3px);
+
+    filter: blur(3px);
+    -moz-filter: blur(3px);
     -webkit-filter: blur(3px);
 }
 
-.site:hover > .icon{
+.site:hover>.icon {
     background-color: #eeeeee;
     transition: all 0.2s ease-in-out;
 }
 
-.site:hover > .front{
+.site:hover>.front {
     transform: rotateY(90deg);
     opacity: 0;
-    
-            filter: blur(3px);
-       -moz-filter: blur(3px);
+
+    filter: blur(3px);
+    -moz-filter: blur(3px);
     -webkit-filter: blur(3px);
 
-            transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    
-           transition: all 0.2s ease-in-out;
+
+    transition: all 0.2s ease-in-out;
     -webkit-transform: all 0.2s ease-in-out;
 }
 
-.site:hover > .links{
+.site:hover>.links {
     transform: rotateY(0deg);
     opacity: 1;
-            transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
-    
-            filter: blur(0px);
-       -moz-filter: blur(0px);
+
+    filter: blur(0px);
+    -moz-filter: blur(0px);
     -webkit-filter: blur(0px);
 }
 
 /*模块分类项*/
-.category{
+.category {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow: hidden;
-    padding:20px 20px;
+    padding: 20px 20px;
     position: relative;
 }
 
-.category > .title{
+.category>.title {
     position: absolute;
     width: 200px;
     text-align: right;
@@ -148,17 +148,18 @@ a:hover{
     font-weight: 200;
 }
 
-.category > .items{
+.category>.items {
     box-sizing: border-box;
     width: 100%;
     padding-left: 250px;
 }
 
-.category:nth-child(2n){
+.category:nth-child(2n) {
     background-color: #F8F8F8;
 }
 
-.header{
+
+.header {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
@@ -169,19 +170,18 @@ a:hover{
     padding-right: 72px;
 }
 
-.header > .logo{
+.header>.logo {
     color: #FFFFFF;
     font-size: 28px;
     line-height: 64px;
     float: left;
 }
 
-.header > .suggest{
-    float: right;
+.header>.searchForm {
     color: #EEEEEE;
     line-height: 64px;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
 }
 
-.header > .suggest:hover{
-    color: #FFD415;
-}
