@@ -132,10 +132,9 @@
 
 
 <script>
-
-
   document.addEventListener('DOMContentLoaded', function () {
-    console.log('DOMContentLoaded event fired.'); 
+    console.log('DOMContentLoaded event fired.');
+
     fetch('data.json') // 确保路径正确
       .then(response => response.json())
       .then(data => {
@@ -151,14 +150,29 @@
           category.items.forEach(item => {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'item';
-            itemDiv.innerHTML = `<a href="${item.href}">${item.text}</a>`;
+
+            const link = document.createElement('a');
+            link.href = item.href;
+            link.textContent = item.title;
+
+            // 添加图标
+            const iconImg = document.createElement('img');
+            iconImg.src = item.icon; // 确保这个路径是可访问的
+            iconImg.alt = 'Icon';
+            link.prepend(iconImg); // 或者使用 link.appendChild(iconImg) 取决于你想要图标的位置
+
+            itemDiv.appendChild(link);
             categoryDiv.appendChild(itemDiv);
           });
 
           categoriesContainer.appendChild(categoryDiv);
         });
+      })
+      .catch(error => {
+        console.error('Error loading the data:', error);
       });
   });
+
 
   // 搜索引擎实现
   function submitSearch() {

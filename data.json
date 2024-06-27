@@ -1,13 +1,19 @@
 {
     "categories": [
-      {
-        "title": "WordPress",
-        "items": [
-          { "text": "官方", "href": "https://wordpress.org/" },
-          { "text": "中文", "href": "https://cn.wordpress.org/" },
-          { "text": "英文", "href": "https://wordpress.org/" }
-        ]
-      }
-      
+        {
+            "title": "WordPress",
+            "items": [
+                {
+                    "text": "中文",
+                    "desc": "WordPress是一种使用PHP语言开发的博客平台",
+                    "href": "https://cn.wordpress.org/",
+                    "icon": "path/to/wordpress-icon.png"
+                },
+                {
+                    "text": "英文",
+                    "href": "https://wordpress.org/"
+                }
+            ]
+        }
     ]
-  }
+}
