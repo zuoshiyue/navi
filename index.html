@@ -26,105 +26,6 @@
       <div id="categoriesContainer"></div>
     </div>
 
-    <div class="body">
-      <!--WordPress-->
-      <!-- <div class="category">
-    <h1 class="title"> WordPress </h1>
-    <div class="items"> 
-      <div class="site">
-        <div class="front">
-          <div class="title">WordPress官网</div>
-          <div class="desc">WordPress是一种使用PHP语言开发的博客平台</div>
-        </div>
-        <div class="links"> <a href="https://wordpress.org/" class="link">官方</a> <a href="https://cn.wordpress.org/" class="link">中文</a> <a href="https://wordpress.org/" class="link">英文</a> </div>
-        <div class="icon"><img src="./img/wordpress.ico" alt=""></div>
-      </div>
-    </div>
-  </div> -->
-      <!--Z-Blog-->
-      <!-- <div class="category">
-    <h1 class="title"> Z-Blog </h1>
-    <div class="items">
-      <div class="site">
-        <div class="front">
-          <div class="title">Z-Blog官网</div>
-          <div class="desc">Z-Blog是一款小巧而强大的基于ASP和PHP平台的Blog程序和CMS建站系统</div>
-        </div>
-        <div class="links"> <a href="https://www.zblogcn.com/" class="link">官方</a> <a href="http://bbs.zblogcn.com/" class="link">论坛</a> <a href="https://blog.zblogcn.com/" class="link">博客</a> </div>
-        <div class="icon"><img src="./img/www.zblogcn.com.ico" alt=""></div>
-      </div>
-    </div>
-  </div> -->
-      <!--Emlog-->
-      <!-- <div class="category">
-    <h1 class="title"> Emlog </h1>
-    <div class="items">
-      <div class="site">
-        <div class="front">
-          <div class="title">Emlog官网</div>
-          <div class="desc">Emlog是一款基于PHP和MySQL的功能强大的博客及CMS建站系统</div>
-        </div>
-        <div class="links"> <a href="http://www.emlog.net/" class="link">官方</a> <a href="http://bbs.emlog.net/forum.php" class="link">论坛</a> <a href="http://www.emlog.net/templates" class="link">模板</a> <a href="http://www.emlog.net/plugins" class="link">插件</a> </div>
-        <div class="icon"><img src="./img/www.emlog.net.ico" alt=""></div>
-      </div>
-    </div>
-  </div> -->
-      <!--Hexo-->
-      <!-- <div class="category">
-    <h1 class="title"> Hexo </h1>
-    <div class="items">
-      <div class="site">
-        <div class="front">
-          <div class="title">Hexo官网</div>
-          <div class="desc">快速、简洁且高效的博客框架</div>
-        </div>
-        <div class="links"> <a href="https://hexo.io/" class="link">官方</a> <a href="https://hexo.io/themes/" class="link">主题</a> <a href="https://hexo.io/plugins/" class="link">插件</a> <a href="https://github.com/hexojs/hexo" class="link">Github</a> </div>
-        <div class="icon"><img src="./img/hexo.io.svg" alt=""></div>
-      </div>
-    </div>
-  </div> -->
-      <!--Typecho-->
-      <!-- <div class="category">
-    <h1 class="title"> Typecho </h1>
-    <div class="items">
-      <div class="site">
-        <div class="front">
-          <div class="title">Typecho官网</div>
-          <div class="desc">念念不忘，必有回响</div>
-        </div>
-        <div class="links"> <a href="http://typecho.org/" class="link">官方</a> <a href="http://forum.typecho.org/" class="link">论坛</a> <a href="http://docs.typecho.org/doku.php" class="link">文档</a> <a href="https://segmentfault.com/t/typecho" class="link">问答</a> </div>
-        <div class="icon"><img src="./img/typecho.org.ico" alt=""></div>
-      </div>
-    </div>
-  </div> -->
-      <!--其他平台-->
-      <!-- <div class="category">
-    <h1 class="title"> 其他平台 </h1>
-    <div class="items">
-      <div class="site">
-        <div class="front">
-          <div class="title">FarBox官网</div>
-          <div class="desc">FarBox让一切简单，打开 Editor，就可以写了；拖入照片能插图，无需上传自然同步</div>
-        </div>
-        <div class="links"> <a href="https://www.farbox.com/" class="link">官方</a> <a href=" https://www.farbox.com/service/templates" class="link">模板</a> </div>
-        <div class="icon">FB</div>
-      </div>
-     </div>
-  </div> -->
-      <!--综合资源-->
-      <!-- <div class="category">
-    <h1 class="title"> 综合资源 </h1>
-    <div class="items">
-      <div class="site">
-        <div class="front">
-          <div class="title">博客吧</div>
-          <div class="desc">关注织梦dedecms与wordpress教程及主题模板</div>
-        </div>
-        <div class="links"> <a href="http://www.boke8.net/" class="link">官方</a> </div>
-        <div class="icon"><img src="./img/www.boke8.net.ico" alt=""></div>
-      </div>
-  <!--END-->
-    </div>
   </div>
   </div>
   <div class="footer"> </div>
@@ -132,47 +33,901 @@
 
 
 <script>
+  // 内联JavaScript数据
+  const categoriesData = {
+    categories: [
+      {
+        title: "我站相关",
+        items: [
+          {
+            title: "个人主页 🔥",
+            desc: "我的个人主页，欢迎访问~",
+            links: [
+              {
+                title: "个人主页",
+                href: "https://zuoshiyue.github.io/navi/",
+              },
+              {
+                title: "个人主页V2",
+                href: "https://zuoshiyue.github.io/nav2/",
+              }
+            ],
+            icon: "https://github.com/zuoshiyue/blog/blob/master/images/zd.jpg?raw=true"
+          },
+          {
+            title: "我的博客",
+            desc: "我的个人博客，欢迎访问~",
+            links: [
+              {
+                title: "我的博客",
+                href: "https://zuoshiyue.github.io/blog/",
+              }
+            ],
+            icon: "https://github.com/zuoshiyue/blog/blob/master/images/zd.jpg?raw=true"
+          },
+          {
+            title: "公司办公地址",
+            links: [
+              {
+                title: "瓜子门户",
+                href: "https://guagua.guazi.com/#/index",
+              },
+              {
+                title: "呱呱",
+                href: "https://guagua.guazi.com/im/#/",
+              },
+              {
+                title: "瓜子邮箱",
+                href: "https://mail.guazi.com/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "KIMI",
+            links: [
+              {
+                title: "KIMI",
+                href: "https://kimi.moonshot.cn/chat/cpuh14dvbf6qnaf09j10",
+              }
+            ],
+            icon: ""
+          }
+
+        ]
+      },
+      {
+        title: "参考文档",
+        items: [
+          {
+            title: "WIKI1",
+            links: [
+              {
+                title: "WIKI",
+                href: "http://cwiki.guazi.com",
+              },
+              {
+                title: "自测文档",
+                href: "http://cwiki.guazi.com/pages/viewpage.action?pageId=302880243",
+              },
+              {
+                title: "复盘",
+                href: "http://cwiki.guazi.com/pages/viewpage.action?pageId=313225456",
+              },
+            ],
+            icon: ""
+          },
+          {
+            title: "WIKI2",
+            links: [
+              {
+                title: "网销听线",
+                href: "https://cwiki.guazi.com/pages/viewpage.action?pageId=364709164",
+              }, {
+                title: "体验优化",
+                href: "https://cwiki.guazi.com/pages/viewpage.action?pageId=364709159",
+              },
+
+            ],
+            icon: ""
+          },
+          {
+            title: "WIKI3",
+            links: [
+              {
+                title: "页面搭建",
+                href: "https://cwiki.guazi.com/pages/viewpage.action?pageId=289362213",
+              },
+              {
+                title: "gaia迭代",
+                href: "https://cwiki.guazi.com/pages/viewpage.action?pageId=248382716",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "arthas文档",
+            links: [
+              {
+                title: "arthas文档",
+                href: "https://arthas.aliyun.com/doc/watch.html",
+              },
+            ],
+            icon: ""
+          },
+          {
+            title: "车源服务文档",
+            links: [
+              {
+                title: "车源服务文档",
+                href: "https://cars-api.guazi-cloud.com/#/doc/internal/%E8%BD%A6%E6%BA%90%E6%9C%8D%E5%8A%A1/%E8%BD%A6%E6%BA%90%E7%BB%9F%E4%B8%80%E8%A1%A8%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E",
+              },
+            ],
+            icon: ""
+          },
+          {
+            title: "重点项目文档目录",
+            links: [
+              {
+                title: "重点项目文档目录",
+                href: "https://cwiki.guazi.com/pages/viewpage.action?pageId=344735351",
+              },
+            ],
+            icon: ""
+          },
+        ]
+      },
+      {
+        title: "服务监控",
+        items: [
+          {
+            title: "服务监控看板",
+            links: [
+              {
+                title: "服务监控看板",
+                href: "https://grafana.guazi-apps.com/?orgId=1",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "Redis监控看板",
+            links: [
+              {
+                title: "Redis监控看板",
+                href: "http://db-monitor.guazi-corp.com/d/4DU6HHAik/redis-servers?refresh=30s&orgId=1&var-instance=gzscmobile.master.g1-sys-redisc-12.4545&var-node=g1-sys-redisc-12",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "主机监控看板",
+            links: [
+              {
+                title: "主机监控看板",
+                href: "http://sre-grafana.guazi-apps.com/d/rYdddlPWk/h03-zhu-ji-jian-kong-xiang-qing?orgId=1&refresh=1m",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "域名可用性监控",
+            links: [
+              {
+                title: "域名可用性监控",
+                href: "https://grafana.guazi-apps.com/d/BVU3N_SWS1/yun-shang-yu-ming-xiang-qing?orgId=1&var-domain=client-restful-api.guazi-apps.com",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "fasebi看板",
+            links: [
+              {
+                title: "fasebi看板",
+                href: "https://lego-data.guazi.com/publicspace/199/10031",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "JIRA相关fastBI",
+            links: [
+              {
+                title: "JIRA相关fastBI",
+                href: "https://lego-data.guazi.com/publicspace/197/10618",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "JIRA用户端需求管理",
+            links: [
+              {
+                title: "JIRA用户端需求管理",
+                href: "http://project.guazi-corp.com/secure/StructureBoard.jspa?jwupdated=63686&s=46#",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "用户研发看板",
+            links: [
+              {
+                title: "用户研发看板",
+                href: "http://project.guazi-corp.com/secure/Dashboard.jspa?selectPageId=14715",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "数据开发平台",
+            links: [
+              {
+                title: "数据开发平台",
+                href: "https://habo-new.guazi-apps.com/",
+              }
+            ],
+            icon: ""
+          },
+
+          // 其他子项...
+        ]
+      },
+      {
+        title: "瓜子平台",
+        items: [
+          {
+            title: "GitLab",
+            links: [
+              {
+                title: "GitLab",
+                href: "http://git.guazi-corp.com/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "Skywalking",
+            links: [
+              {
+                title: "Skywalking",
+                href: "http://skywalking.guazi-apps.com/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "Medusa",
+            links: [
+              {
+                title: "Medusa",
+                href: "https://medusa.guazi-apps.com/app/applist?env=online",
+              }
+            ],
+            icon: ""
+          },
+
+          {
+            title: "ETCD",
+            links: [
+              {
+                title: "ETCD",
+                href: "https://config.guazi-apps.com/etcd",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "JIRA",
+            links: [
+              {
+                title: "JIRA",
+                href: "http://project.guazi-corp.com",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "NIER",
+            links: [
+              {
+                title: "NIER",
+                href: "https://nier2.guazi-apps.com/alarmTemplates/list",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "Kibana",
+            links: [
+              {
+                title: "Kibana",
+                href: "https://kibana.guazi-apps.com/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "OKR",
+            links: [
+              {
+                title: "OKR",
+                href: "https://okr.guazi.com/#",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "KCP后台",
+            links: [
+              {
+                title: "KCP后台",
+                href: "http://kcp.guazi-apps.com/",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "AB实验平台",
+            links: [
+              {
+                title: "online",
+                href: "https://pangu.guazi-apps.com/ab-admin/experimentList",
+              },
+              {
+                title: "pre",
+                href: "https://pangu-preview.guazi-apps.com/ab-admin/experimentList",
+              },
+              {
+                title: "test",
+                href: "https://pangu.guazi-cloud.com/ab-admin/experimentList",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "商品中心后台",
+            links: [
+              {
+                title: "online",
+                href: "https://pangu.guazi-apps.com/product_test_backstage",
+              },
+              {
+                title: "pre",
+                href: "https://pangu-preview.guazi-apps.com/product_test_backstage",
+              },
+              {
+                title: "test",
+                href: "https://pangu.guazi-cloud.com/product_test_backstage",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "广告配置后台",
+            links: [
+              {
+                title: "online",
+                href: "https://pangu.guazi-apps.com/ad-background/contentList",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "售车CRM管理系统",
+            links: [
+              {
+                title: "online",
+                href: "https://sale-crm.guazi.com/#/nationwide-purchase/national-purchase-order/list",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "订单管理后台",
+            links: [
+              {
+                title: "online",
+                href: "https://pangu.guazi-apps.com/order-web/whitelist_config",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "二手车CRM后台",
+            links: [
+              {
+                title: "online",
+                href: "https://client-crm.guazi-apps.com/index",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "SPC权限系统",
+            links: [
+              {
+                title: "online",
+                href: "https://spc.guazi-apps.com/#/",
+              },
+              {
+                title: "test",
+                href: "https://spc.guazi-cloud.com/#/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "商城标签配置",
+            links: [
+              {
+                title: "online",
+                href: "https://pangu.guazi-apps.com/car_label_config/configList",
+              },
+              {
+                title: "pre",
+                href: "https://pangu-preview.guazi-apps.com/car_label_config/configList",
+              },
+              {
+                title: "test",
+                href: "https://pangu.guazi-cloud.com/car_label_config/configList",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "公共平台",
+            links: [
+              {
+                title: "online",
+                href: "https://sms-manager.guazi-apps.com/sms/code",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "网销CRM平台",
+            links: [
+              {
+                title: "online",
+                href: "https://crm2.guazi.com/",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "排班系统",
+            links: [
+              {
+                title: "online",
+                href: "https://pangu-preview.guazi-apps.com/DutySystem/shiftSchedule?teamName=%E5%95%86%E5%9F%8E",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "用户中心管理后台",
+            links: [
+              {
+                title: "online",
+                href: "http://chd-uc-admin.guazi-apps.com/rule_white_list",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "交付平台",
+            links: [
+              {
+                title: "online",
+                href: "https://cars-delivery.guazi.com/crm",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "哈勃数据平台",
+            links: [
+              {
+                title: "online",
+                href: "https://data-portal.guazi-apps.com/",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "big data platform",
+            links: [
+              {
+                title: "online",
+                href: "https://max-kafka-new.guazi-apps.com/topics/detail?tab=data",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "大数据权限申请",
+            links: [
+              {
+                title: "online",
+                href: "https://max-auth.guazi-apps.com/",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "数据资产管理平台",
+            links: [
+              {
+                title: "online",
+                href: "https://idata.guazi-apps.com/assetMap/assetMenu/tableEncyclopedia/tableView/dataTableDetails?id=140553",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "数据库自助服务",
+            links: [
+              {
+                title: "online",
+                href: "https://db-service.guazi-corp.com/",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "瓜子交易平台工具",
+            desc: "支付mock\计算物流费",
+            links: [
+              {
+                title: "online",
+                href: "https://qa-znkfn-tool.guazi-cloud.com/home/",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "过户审核通过swagger",
+            desc: "工具 - auditPass - 没权限去订单管理后台添加",
+            links: [
+              {
+                title: "test",
+                href: "http://user-order.guazi-cloud.com/swagger-ui.html#/%E5%B7%A5%E5%85%B7%E7%B1%BB/auditPassUsingPOST",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "过户审核白名单后台",
+            desc: "工具 - auditPass",
+            links: [
+              {
+                title: "online",
+                href: "http://user-order.guazi-cloud.com/swagger-ui.html#/%E5%B7%A5%E5%85%B7%E7%B1%BB/auditPassUsingPOST",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "搜索工具平台",
+            desc: "",
+            links: [
+              {
+                title: "online",
+                href: "https://pangu.guazi-apps.com/searchTool/ProductQuery",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "大鱼平台",
+            desc: "简单mock",
+            links: [
+              {
+                title: "test",
+                href: "https://vbigfish.guazi-cloud.com/#/layout/layout?id=2abdb73d-ce6f-427c-9e6a-94fea61408d8",
+              },
+              
+            ],
+            icon: ""
+          },
+          {
+            title: "新 - 大鱼平台",
+            desc: "AB控制",
+            links: [
+              {
+                title: "online",
+                href: "https://new-bigfish.guazi-apps.com/testTool/abExperimentTool",
+              },
+              {
+                title: "test",
+                href: "https://new-bigfish.guazi-cloud.com/testTool/abExperimentTool",
+              },
+              {
+                title: "doc",
+                href: "https://cwiki.guazi.com/pages/viewpage.action?pageId=422265327",
+              },
+              
+            ],
+            icon: ""
+          },
+          // 其他子项...
+        ]
+      },
+
+      {
+        title: "电子游戏",
+        items: [
+          {
+            title: "百度贴吧",
+            desc: "",
+            links: [
+              {
+                title: "百度贴吧",
+                href: "https://tieba.baidu.com/f?kw=%BD%A3%CD%F83",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "剑三魔盒",
+            desc: "",
+            links: [
+              {
+                title: "剑三魔盒",
+                href: "https://www.baidu.com/link?url=kcrtN2zbTO4aEWDH3sBtWq2xJ6M5vmr1oa0DSBCwyydgi-SMsO4DMg3vQl-4o9ii&wd=&eqid=b26b41eb000a27140000000364cb0e51",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "奇遇查询",
+            desc: "",
+            links: [
+              {
+                title: "奇遇查询",
+                href: "https://j3cx.com/serendipity",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "jx3toy论坛",
+            desc: "lus宏脚本论坛",
+            links: [
+              {
+                title: "jx3toy论坛",
+                href: "https://jx3toy.zulipchat.com",
+              }
+            ],
+            icon: ""
+          },
+          // 其他子项...
+        ]
+      },
+      {
+        title: "办公学习",
+        items: [
+        {
+            title: "美团技术资源",
+            desc: "",
+            links: [
+              {
+                title: "美团",
+                href: "https://tech.meituan.com/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "阮一峰的网络日志",
+            desc: "阮一峰，科技爱好者周刊。",
+            links: [
+              {
+                title: "阮一峰的网络日志",
+                href: "http://www.ruanyifeng.com/blog/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "酷壳",
+            links: [
+              {
+                title: "酷壳",
+                href: "https://www.coolshell.cn/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "regex101",
+            desc: "强大的正则表达式工具",
+            links: [
+              {
+                title: "regex101",
+                href: "https://regex101.com/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "cloudconvert",
+            desc: "一个格式转换网站",
+            links: [
+              {
+                title: "cloudconvert",
+                href: "https://cloudconvert.com/formats",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "ProcessOn",
+            desc: "免费在线作图、实时协作。",
+            links: [
+              {
+                title: "ProcessOn",
+                href: "https://www.processon.com/",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "bdp数据分析软件",
+            desc: "画数据地图用的免费工具",
+            links: [
+              {
+                title: "bdp数据分析软件",
+                href: "https://me.bdp.cn/index.html#/dash_edit/proj_c589e9f0bb0471a67197d11cfd9518f6/dsh_e38bdd9e875ae01ef77d3705be1ea184",
+              }
+            ],
+            icon: ""
+          },
+     
+          
+
+          // 其他子项...
+        ]
+      },
+
+
+
+      {
+        title: "走近科学",
+        items: [
+          {
+            title: "优云",
+            desc: "",
+            links: [
+              {
+                title: "优云",
+                href: "https://youyun88.net/user#",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "89",
+            desc: "",
+            links: [
+              {
+                title: "89",
+                href: "https://89yun.men/dashboard",
+              },
+              {
+                title: "防走丢",
+                href: "八九云.com",
+              }
+            ],
+            icon: ""
+          },
+          {
+            title: "-",
+            desc: "",
+            links: [
+              {
+                title: "1",
+                href: "https://xn--mes358aby2apfg.com/#/forgetpassword",
+              },
+              {
+                title: "2",
+                href: "http://xn--mes91r2ng7p4a.com/#/register?code=Zks2hmtG",
+              }
+              
+            ],
+            icon: ""
+          },
+
+          // 其他子项...
+        ]
+      },
+      // 其他分类...
+    ]
+  };
   document.addEventListener('DOMContentLoaded', function () {
     console.log('DOMContentLoaded event fired.');
+    const categoriesContainer = document.getElementById('categoriesContainer');
+    categoriesData.categories.forEach(category => {
+      const categoryDiv = document.createElement('div');
+      categoryDiv.className = 'category';
 
-    fetch('data.json') // 确保路径正确
-      .then(response => response.json())
-      .then(data => {
-        const categoriesContainer = document.getElementById('categoriesContainer');
-        data.categories.forEach(category => {
-          const categoryDiv = document.createElement('div');
-          categoryDiv.className = 'category';
+      const titleH1 = document.createElement('h1');
+      titleH1.className = 'title';
+      titleH1.textContent = category.title;
+      categoryDiv.appendChild(titleH1);
 
-          const titleH1 = document.createElement('h1');
-          titleH1.textContent = category.title;
-          categoryDiv.appendChild(titleH1);
+      const itemsDiv = document.createElement('div');
+      itemsDiv.className = 'items';
+      categoryDiv.appendChild(itemsDiv);
 
-          category.items.forEach(item => {
-            const itemDiv = document.createElement('div');
-            itemDiv.className = 'item';
+      category.items.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'site';
 
-            const link = document.createElement('a');
-            link.href = item.href;
-            link.textContent = item.title;
+        const frontDiv = document.createElement('div');
+        frontDiv.className = 'front';
 
-            // 添加图标
-            const iconImg = document.createElement('img');
-            iconImg.src = item.icon; // 确保这个路径是可访问的
-            iconImg.alt = 'Icon';
-            link.prepend(iconImg); // 或者使用 link.appendChild(iconImg) 取决于你想要图标的位置
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'title';
+        titleDiv.textContent = item.title;
+        frontDiv.appendChild(titleDiv);
+        if (item.desc != undefined && item.desc != null && item.desc != '') {
+          const descDiv = document.createElement('div');
+          descDiv.className = 'desc';
+          descDiv.textContent = item.desc;
+          frontDiv.appendChild(descDiv);
+        }
 
-            itemDiv.appendChild(link);
-            categoryDiv.appendChild(itemDiv);
-          });
+        itemDiv.appendChild(frontDiv);
 
-          categoriesContainer.appendChild(categoryDiv);
-        });
-      })
-      .catch(error => {
-        console.error('Error loading the data:', error);
+
+        const linksDiv = document.createElement('div');
+        linksDiv.className = 'links';
+
+        item.links.forEach(link => {
+          const linkA = document.createElement('a');
+          linkA.className = 'link';
+          linkA.href = link.href;
+          linkA.textContent = link.title + " ";
+          linksDiv.appendChild(linkA);
+        })
+        itemDiv.appendChild(linksDiv);
+
+        if (item.icon != undefined && item.icon != null && item.icon != '') {
+          const iconDiv = document.createElement('div');
+          iconDiv.className = 'icon';
+
+          // 添加图标
+          const iconImg = document.createElement('img');
+          iconImg.src = item.icon;
+          iconDiv.appendChild(iconImg);
+
+          itemDiv.appendChild(iconDiv);
+        }
+
+        itemsDiv.appendChild(itemDiv);
       });
-  });
 
+      categoriesContainer.appendChild(categoryDiv);
+    });
+  });
 
   // 搜索引擎实现
   function submitSearch() {
