@@ -1113,6 +1113,8 @@
           const linkA = document.createElement('a');
           linkA.className = 'link';
           linkA.href = link.href;
+          linkA.target = '_blank';
+          linkA.rel = 'noopener noreferrer';
           linkA.textContent = link.title + " ";
           linksDiv.appendChild(linkA);
         })
