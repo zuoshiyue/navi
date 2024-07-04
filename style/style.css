@@ -203,3 +203,13 @@ a:hover {
     text-align: center; 
     
 }
+
+.header > .suggest{
+    float: right;
+    color: #EEEEEE;
+    line-height: 64px;
+}
+
+.header > .suggest:hover{
+    color: #FFD415;
+}
